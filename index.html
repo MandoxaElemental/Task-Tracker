@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="/style/styles.css">
+    <link rel="stylesheet" href="/style/wickedcss.min.css">
+</head>
+<body>
+    <button id="newTask">Add Task</button>
+    <div class="topBar topGrid">
+        <div><p>To Do</p></div>
+        <div><p>In Progress</p></div>
+        <div><p>Complete</p></div>
+    </div>
+    <div class="gridBox">
+        <div id="toDo"></div>
+        <div id="inProgress"></div>
+        <div id="complete"></div>
+    </div>
+
+    <div id="addBox" class="addTask hidden">
+        <div class="topBar"><h1>Add Task</h1></div>
+        <div class="classGrid">
+            <input id="nameInput" placeholder="Name" type="text">
+            <input id="descriptionInput" placeholder="Description" type="text">
+            <select name="Priority" id="priorityInput">
+                <option value="">Priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+              <input type="date" id="dateInput" name="Due Date">
+              <select name="Status" id="statusInput">
+                <option value="">Status</option>
+                <option value="To Do">To Do</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Complete">Complete</option>
+              </select>
+              <div class="bottomBtns">
+                  <button id="addBtn" class="smallBtn">Add</button> <button id="cancelBtn" class="smallBtn">Cancel</button>
+              </div>
+        </div>
+    </div>
+    <div id="infoBox" class="addTask hidden">
+        <div class="topBar"><h1>Task</h1></div>
+        <div class="info">
+            <p id="infoName"></p>
+            <p id="infoDesc"></p>
+            <p id="infoDate"></p>
+            <button id="back" class="smallBtn">Back</button>
+        </div>
+    </div>
+    <div id="optionBox" class="addTask hidden">
+        <div class="topBar"><h1>Update Task</h1></div>
+        <div class="classGrid">
+            <input id="nameOption" placeholder="Name" type="text">
+            <input id="descriptionOption" placeholder="Description" type="text">
+            <select name="Priority" id="priorityOption">
+                <option value="">Priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+              <input type="date" id="dateOption" name="Due Date">
+              <select name="Status" id="statusOption">
+                <option value="To Do">To Do</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Complete">Complete</option>
+              </select>
+              <div class="bottomBtns">
+                  <button id="optionBtn" class="smallBtn">Update</button> <button id="cancelOptionBtn" class="smallBtn">Cancel</button>
+              </div>
+        </div>
+    </div>
+    <script type="module" src="/script/app.js"></script>
+</body>
+</html>

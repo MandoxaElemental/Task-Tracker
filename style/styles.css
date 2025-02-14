@@ -1,0 +1,103 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.topBar{
+    border-radius: 5px 5px 0px 0px;
+    background-color: green;
+    margin: 0;
+    text-align: center;
+}
+
+.topGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.addTask{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    border: solid black medium;
+    border-radius: 10px;
+}
+
+.classGrid{
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+}
+h1{
+    margin: 0;
+}
+
+.bottomBtns{
+    display: flex;
+    justify-content: end;
+}
+
+.smallBtn{
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover{
+    opacity: 80%;
+}
+
+#addBtn{
+    background-color: green;
+}
+
+#cancelBtn{
+    background-color: red;
+}
+
+.hidden{
+    display: none;
+}
+
+.gridBox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info{
+    margin: 10px;
+    text-align: center;
+}
+
+#toDo{
+    background-color: rgba(208, 208, 208, 0.479);
+    padding: 0 10px;
+    height: 450px;
+    overflow: scroll;
+}
+#inProgress{
+    background-color: rgba(255, 255, 255, 0.479);
+    padding: 0 10px;
+    height: 450px;
+    overflow: scroll;
+}
+#complete{
+    background-color: rgba(208, 208, 208, 0.479);
+    padding: 0 10px;
+    height: 450px;
+    overflow: scroll;
+}
+
+.low{
+    background-color: green;
+}
+
+.medium{
+    background-color: yellow;
+}
+.high{
+    background-color: red;
+}
