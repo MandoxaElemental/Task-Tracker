@@ -34,8 +34,10 @@
     * vercel or azure
 
 
+notes: Couldn't update info
+
 ### Task Tracker _GitHub Repository Link:
-[Task Tracker GitHub Repository Link]()
+[Task Tracker GitHub Repository Link](https://github.com/MandoxaElemental/Task-Tracker)
 
 ### Task Tracker _Azure Link:
-[Task Tracker Azure Link]()
+[Task Tracker Azure Link](https://greinarestasktracker-fsc9aph0h4azenfr.westus-01.azurewebsites.net/)

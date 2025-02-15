@@ -22,6 +22,7 @@ let DateOption = document.getElementById('dateOption')
 let StatusOption = document.getElementById('statusOption')
 let SaveOptionBtn = document.getElementById('optionBtn')
 let Back = document.getElementById('back')
+let UpdateBtns = document.getElementById('updateBtns')
 
 NewTaskBtn.addEventListener('click', async() => {
     AddBox.className = 'addTask fadeIn'
@@ -83,6 +84,16 @@ function taskList(){
             TaskName.className = "high"
         }
         TaskName.innerText = tasks.name
+
+        let deletebtn = document.createElement('button');
+        deletebtn.type = 'button';
+        deletebtn.className = "smallBtn";
+        deletebtn.textContent = "Delete Task";
+
+        deletebtn.addEventListener('click', function () {
+            removeFromLocalStorage(tasks);
+            newDiv.remove();
+        });
         newDiv.appendChild(TaskName)
         let TaskDate = document.createElement('p') 
         TaskDate.innerText = tasks.date
@@ -110,9 +121,19 @@ function taskList(){
             StatusOption.value = tasks.status
             let currentID = tasks.id
             console.log(currentID)
+            let deletebtn = document.createElement('button');
+            deletebtn.type = 'button';
+            deletebtn.className = "smallBtn";
+            deletebtn.textContent = "Delete";
+            deletebtn.addEventListener('click', function () {
+            removeFromLocalStorage(tasks);
+            newDiv.remove();
+            OptionBox.className = "hidden"
+        });
+        UpdateBtns.appendChild(deletebtn)
 
             SaveOptionBtn.addEventListener('click', async () => {
-
+                OptionBox.className = "hidden"
             })
         })
 
